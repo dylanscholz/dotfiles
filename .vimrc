@@ -1,3 +1,7 @@
+" ignore case during searches unless capitals are used
+set ignorecase smartcase
+
+" line numbers
 set number
 
 "allow mouse scrolling
@@ -10,7 +14,7 @@ syntax on
 set background=dark
 
 "allowing clipboard to copy and paste. http://evertpot.com/osx-tmux-vim-copy-paste-clipboard/
-set clipboard=unnamed
+"set clipboard=unnamed
 
 "allows mouse control http://unix.stackexchange.com/questions/139578/copy-paste-for-vim-is-not-working-when-mouse-set-mouse-a-is-on
 set mouse=a
@@ -21,7 +25,11 @@ set backspace=indent,eol,start
 
 
 "auto indentation. http://vim.wikia.com/wiki/Indenting_source_code
-set expandtab
-set shiftwidth=2
-set softtabstop=2
+"set expandtab
+"set shiftwidth=2
+"set softtabstop=2
 
+
+set cursorline
+" highlight the cursor's column
+set cursorcolumn
